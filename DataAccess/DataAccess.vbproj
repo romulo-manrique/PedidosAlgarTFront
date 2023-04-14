@@ -64,6 +64,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\IClienteRepository.vb" />
     <Compile Include="Contracts\IGenericReposotory.vb" />
     <Compile Include="Entities\Cliente.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
