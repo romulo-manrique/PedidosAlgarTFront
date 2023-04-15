@@ -64,6 +64,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\PedidoEModel.vb" />
     <Compile Include="Models\ProductoModel.vb" />
     <Compile Include="Models\ClienteModel.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

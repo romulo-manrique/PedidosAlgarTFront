@@ -9,7 +9,6 @@ Public Class frmProductos
     Private Sub ListProductos()
         Try
             DGVProductos.DataSource = ProductosModel.GetProductos()
-
         Catch ex As Exception
 
         End Try
