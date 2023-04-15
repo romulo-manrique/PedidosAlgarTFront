@@ -7,7 +7,7 @@ Public Class ClienteModel
     Private _apellidoCliente As String
     Private _telefonoCliente As String
 
-    Private state As EntityState
+    Public state As EntityState
 
     Private Repository As IClienteRepository
 
@@ -96,9 +96,12 @@ Public Class ClienteModel
                 .apellidoCliente = item.apellidoCliente,
                 .telefonoCliente = item.telefonoCliente
             })
-
         Next
         Return ListClienteViewModel
+    End Function
+
+    Public Function FindById(Filtrer As String) As IEnumerable(Of Cliente)
+        Return GetClientes().FindAll(Function(cli) cli.cedula.Contains(Filtrer) OrElse cli.nombreCliente.Contains(Filtrer) OrElse cli.apellidoCliente.Contains(Filtrer) OrElse cli.telefonoCliente.Contains(Filtrer))
     End Function
 
 

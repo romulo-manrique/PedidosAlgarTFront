@@ -11,7 +11,8 @@ Public Class ClienteRepository
     Private update As String
     Private delete As String
     Public Sub New()
-        selectAll = "select * from  cliente"
+        selectAll = "usp_listar_clientes"
+
         insert = "INSERT INTO [dbo].[cliente] ([cedula] ,[nombreCliente] ,[apellidoCliente] ,[telefonoCliente]) VALUES (@cedula ,@nombreCliente,@apellidoCliente ,@telefonoCliente)"
         update = "UPDATE [dbo].[cliente]  SET [nombreCliente]   = @nombreCliente,[apellidoCliente] = @apellidoCliente ,[telefonoCliente] = @telefonoCliente WHERE [cedula] = @cedula "
         delete = "DELETE FROM [dbo].[cliente] WHERE cedula = @cedula"

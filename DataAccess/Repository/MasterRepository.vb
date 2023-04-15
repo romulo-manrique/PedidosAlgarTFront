@@ -32,7 +32,7 @@ Public MustInherit Class MasterRepository
             Using command = New SqlCommand()
                 command.Connection = connection
                 command.CommandText = transactSql
-                command.CommandType = CommandType.Text
+                command.CommandType = CommandType.StoredProcedure
 
                 Dim reader = command.ExecuteReader()
                 Using table = New DataTable()
