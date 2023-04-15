@@ -60,21 +60,21 @@ Public Class ClienteModel
         Dim message = Nothing
 
         Try
-            Dim employedDataModel As New Cliente()
+            Dim ClienteDataModel As New Cliente()
 
-            employedDataModel.cedula = Cedula
-            employedDataModel.nombreCliente = NombreCliente
-            employedDataModel.apellidoCliente = ApellidoCliente
-            employedDataModel.telefonoCliente = TelefonoCliente
+            ClienteDataModel.cedula = Cedula
+            ClienteDataModel.nombreCliente = NombreCliente
+            ClienteDataModel.apellidoCliente = ApellidoCliente
+            ClienteDataModel.telefonoCliente = TelefonoCliente
 
             Select Case state
                 Case EntityState.Added
-                    Repository.Add(employedDataModel)
+                    Repository.Add(ClienteDataModel)
                     message = "Successfuly record "
                 Case EntityState.Modified
-                    Repository.Edit(employedDataModel)
+                    Repository.Edit(ClienteDataModel)
                 Case EntityState.Deleted
-                    Repository.Remove(employedDataModel.cedula)
+                    Repository.Remove(ClienteDataModel.cedula)
             End Select
 
         Catch ex As Exception

@@ -45,4 +45,26 @@ Public MustInherit Class MasterRepository
 
     End Function
 
+    Protected Function ExecuteNonQuerySP(transactSql As String) As Integer
+        Using connection = GetConnection()
+            connection.Open()
+            Using command = New SqlCommand()
+                command.Connection = connection
+                command.CommandText = transactSql
+                command.CommandType = CommandType.StoredProcedure
+
+                For Each item As SqlParameter In parameters
+                    command.Parameters.Add(item)
+                Next
+
+                Dim result = command.ExecuteNonQuery()
+                parameters.Clear()
+
+                Return result
+
+            End Using
+        End Using
+
+    End Function
+
 End Class

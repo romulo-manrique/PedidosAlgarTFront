@@ -64,8 +64,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\IProductoRepository.vb" />
     <Compile Include="Contracts\IClienteRepository.vb" />
     <Compile Include="Contracts\IGenericReposotory.vb" />
+    <Compile Include="Entities\Producto.vb" />
     <Compile Include="Entities\Cliente.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -82,6 +84,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Repository\ProductoRepository.vb" />
     <Compile Include="Repository\ClienteRepository.vb" />
     <Compile Include="Repository\MasterRepository.vb" />
     <Compile Include="Repository\Repository.vb" />
