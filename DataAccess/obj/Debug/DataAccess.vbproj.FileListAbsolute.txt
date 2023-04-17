@@ -1,0 +1,13 @@
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\bin\Debug\DataAccess.xml
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\obj\Debug\DataAccess.Resources.resources
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\obj\Debug\DataAccess.vbproj.GenerateResource.Cache
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\obj\Debug\DataAccess.xml
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\obj\Debug\DataAccess.vbproj.AssemblyReference.cache
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\obj\Debug\DataAccess.vbproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\obj\Debug\DataAccess.vbproj.CopyComplete

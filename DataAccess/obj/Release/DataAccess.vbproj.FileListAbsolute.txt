@@ -1,0 +1,10 @@
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\bin\Release\DataAccess.dll
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\bin\Release\DataAccess.pdb
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\bin\Release\DataAccess.xml
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\obj\Release\DataAccess.Resources.resources
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\obj\Release\DataAccess.vbproj.GenerateResource.Cache
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\obj\Release\DataAccess.dll
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\obj\Release\DataAccess.xml
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\obj\Release\DataAccess.pdb
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\obj\Release\DataAccess.vbproj.AssemblyReference.cache
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\DataAccess\obj\Release\DataAccess.vbproj.CoreCompileInputs.cache

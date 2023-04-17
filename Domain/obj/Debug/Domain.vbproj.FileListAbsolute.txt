@@ -1,0 +1,16 @@
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\Domain\bin\Debug\Domain.dll
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\Domain\bin\Debug\Domain.pdb
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\Domain\bin\Debug\Domain.xml
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\Domain\obj\Debug\Domain.Resources.resources
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\Domain\obj\Debug\Domain.vbproj.GenerateResource.Cache
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\Domain\obj\Debug\Domain.dll
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\Domain\obj\Debug\Domain.xml
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\Domain\obj\Debug\Domain.pdb
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\Domain\bin\Debug\DataAccess.dll
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\Domain\bin\Debug\DataAccess.pdb
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\Domain\bin\Debug\DataAccess.xml
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\Domain\obj\Debug\Domain.vbproj.AssemblyReference.cache
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\Domain\obj\Debug\Domain.vbproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\Domain\obj\Debug\Domain.vbproj.CopyComplete
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\Domain\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\Test AlgarTech\SolAlgar\Domain\bin\Debug\Newtonsoft.Json.xml
