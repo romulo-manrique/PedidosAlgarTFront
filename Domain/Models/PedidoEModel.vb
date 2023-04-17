@@ -72,12 +72,13 @@ Public Class PedidoEModel
             PedidoEDataModel.cedula = Cedula
             PedidoEDataModel.fecha = Fecha
             PedidoEDataModel.direccion = Direcion
-            PedidoEDataModel.precioTotal = PrecioTotal
+            PedidoEDataModel.valorTotal = PrecioTotal
 
             Select Case state
                 Case EntityState.Added
-                    Repository.Add(PedidoEDataModel)
-                    message = "Successfuly record "
+                    'Repository.Add(PedidoEDataModel)
+                    message = Repository.Add(PedidoEDataModel).ToString()
+                    'message = "Successfuly record "
                 Case EntityState.Modified
                     Repository.Edit(PedidoEDataModel)
                 Case EntityState.Deleted
@@ -100,14 +101,14 @@ Public Class PedidoEModel
                 .cedula = item.cedula,
                 .fecha = item.fecha,
                 .direccion = item.direccion,
-                .precioTotal = item.precioTotal
+                .valorTotal = item.valorTotal
             })
         Next
         Return ListPedidoEViewModel
     End Function
 
     Public Function FindById(Filtrer As String) As IEnumerable(Of PedidoE)
-        Return GetPedidoE().FindAll(Function(pedE) pedE.idPedido.Equals(Filtrer))
+        Return GetPedidoE().FindAll(Function(pedE) pedE.idPedido.Equals(Integer.Parse(Filtrer)))
     End Function
 
 End Class

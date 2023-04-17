@@ -11,20 +11,19 @@ Public Class PedidoERepository
     Private update As String
     Private delete As String
     Public Sub New()
-        selectAll = "usp_listar_pedidoE"
+        selectAll = "usp_listar_pedidosE"
         insert = "usp_registrar_pedidoE"
-        update = "usp_modicar_pedidoE"
+        update = "usp_modificar_pedidoE"
         delete = "usp_borrar_pedidoE"
 
     End Sub
 
     Public Function Add(entity As PedidoE) As Integer Implements IGenericReposotory(Of PedidoE).Add
         parameters = New List(Of SqlParameter)
-        parameters.Add(New SqlParameter("@idPedido", entity.idPedido))
         parameters.Add(New SqlParameter("@cedula", entity.cedula))
         parameters.Add(New SqlParameter("@fecha", entity.fecha))
         parameters.Add(New SqlParameter("@direccion", entity.direccion))
-        parameters.Add(New SqlParameter("@precioTotal", entity.precioTotal))
+        parameters.Add(New SqlParameter("@precioTotal", entity.valorTotal))
 
         Return ExecuteNonQuerySP(insert)
     End Function
@@ -35,7 +34,7 @@ Public Class PedidoERepository
         parameters.Add(New SqlParameter("@cedula", entity.cedula))
         parameters.Add(New SqlParameter("@fecha", entity.fecha))
         parameters.Add(New SqlParameter("@direccion", entity.direccion))
-        parameters.Add(New SqlParameter("@precioTotal", entity.precioTotal))
+        parameters.Add(New SqlParameter("@precioTotal", entity.valorTotal))
 
         Return ExecuteNonQuerySP(update)
     End Function
@@ -50,7 +49,7 @@ Public Class PedidoERepository
                 .cedula = items(1),
                 .fecha = items(2),
                 .direccion = items(3),
-                .precioTotal = items(4)
+                .valorTotal = items(4)
             })
         Next
 
@@ -63,5 +62,4 @@ Public Class PedidoERepository
 
         Return ExecuteNonQuerySP(delete)
     End Function
-
 End Class

@@ -84,7 +84,21 @@ Public Class ProductoModel
     End Function
 
     Public Function FindById(Filtrer As String) As IEnumerable(Of Producto)
-        Return GetProductos().FindAll(Function(pro) pro.nombreProducto.Contains(Filtrer))
+        Return GetProductos().FindAll(Function(pro) pro.idProducto.Equals(Integer.Parse(Filtrer)))
+    End Function
+
+    Public Function GetProductosServ() As List(Of Producto)
+        Dim ListProductoDataModel = Repository.GetAllServices()
+        Dim ListProductoViewModel = New List(Of Producto)
+
+        'For Each item As Producto In ListProductoDataModel
+        '    ListProductoViewModel.Add(New Producto With {
+        '        .idProducto = item.idProducto,
+        '        .nombreProducto = item.nombreProducto,
+        '        .valorUnitario = item.valorUnitario
+        '    })
+        'Next
+        Return ListProductoViewModel
     End Function
 
 End Class

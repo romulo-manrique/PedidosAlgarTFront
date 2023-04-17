@@ -9,7 +9,6 @@ Public Class frmCliente
     Private Sub ListClientes()
         Try
             DGVClientes.DataSource = ClienteModel.GetClientes()
-
         Catch ex As Exception
 
         End Try
@@ -69,9 +68,8 @@ Public Class frmCliente
             MessageBox.Show(result)
             ListClientes()
             Restart()
-
-
         End If
+
     End Sub
 
     Private Sub Restart()
@@ -85,5 +83,6 @@ Public Class frmCliente
 
     Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
         Restart()
+
     End Sub
 End Class

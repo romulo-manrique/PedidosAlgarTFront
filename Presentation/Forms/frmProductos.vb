@@ -34,7 +34,6 @@ Public Class frmProductos
             txtValorUnitario.Text = DGVProductos.CurrentRow.Cells(2).Value
         Else
 
-
         End If
     End Sub
 

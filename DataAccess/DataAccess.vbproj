@@ -43,6 +43,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
@@ -64,10 +67,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\IPedidoDRepository.vb" />
     <Compile Include="Contracts\IPedidoERepository.vb" />
     <Compile Include="Contracts\IProductoRepository.vb" />
     <Compile Include="Contracts\IClienteRepository.vb" />
     <Compile Include="Contracts\IGenericReposotory.vb" />
+    <Compile Include="Entities\PedidoD.vb" />
     <Compile Include="Entities\PedidoE.vb" />
     <Compile Include="Entities\Producto.vb" />
     <Compile Include="Entities\Cliente.vb" />
@@ -86,6 +91,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Repository\PedidoDRepository.vb" />
     <Compile Include="Repository\PedidoERepository.vb" />
     <Compile Include="Repository\ProductoRepository.vb" />
     <Compile Include="Repository\ClienteRepository.vb" />
@@ -110,6 +116,7 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

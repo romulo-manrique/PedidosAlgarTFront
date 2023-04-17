@@ -1,6 +1,8 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
+Imports System.Net
 Imports DataAccess
+Imports Newtonsoft.Json
 
 Public Class ProductoRepository
     Inherits MasterRepository
@@ -33,6 +35,25 @@ Public Class ProductoRepository
         Return ExecuteNonQuerySP(update)
     End Function
 
+    Public Async Function GetAllServices() As Task(Of IEnumerable(Of Producto)) Implements IProductoRepository.GetAllServices
+        Dim c As New Producto
+        Dim RestURL As String = "http://localhost:44399/api/Producto"
+        Dim client As New Http.HttpClient
+        'Dim JsonData As String = JsonConvert.SerializeObject(c)
+        'Dim RestContent As New Http.StringContent(JsonData, Encoding.UTF8, "application/json")
+        Dim RestResponse As Http.HttpResponseMessage = Await client.GetAsync(RestURL)
+
+        Dim OK = RestResponse.StatusCode.ToString
+        Dim respuesta = RestResponse.Content.ReadAsStringAsync
+        Dim Tabla As Producto = JsonConvert.DeserializeObject(Of Producto)(respuesta.Result())
+
+        Return Tabla
+    End Function
+
+    Public Function Remove(cedula As String) As Integer Implements IGenericReposotory(Of Producto).Remove
+        Throw New NotImplementedException()
+    End Function
+
     Private Function IGenericReposotory_GetAll() As IEnumerable(Of Producto) Implements IGenericReposotory(Of Producto).GetAll
         Dim resultTable = ExecuteReader(selectAll)
         Dim ListProductos As New List(Of Producto)
@@ -48,10 +69,4 @@ Public Class ProductoRepository
         Return ListProductos
     End Function
 
-    Private Function IGenericReposotory_Remove(idProducto As String) As Integer Implements IGenericReposotory(Of Producto).Remove
-        parameters = New List(Of SqlParameter)
-        parameters.Add(New SqlParameter("@idProducto", idProducto))
-
-        Return ExecuteNonQuerySP(delete)
-    End Function
 End Class

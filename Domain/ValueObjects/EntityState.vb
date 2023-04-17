@@ -2,6 +2,4 @@
     Added
     Deleted
     Modified
-
-
 End Enum
