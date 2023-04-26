@@ -117,8 +117,7 @@ Public Class frmPedidos
         Dim c As New Producto
         Dim RestURL As String = "http://localhost:44399/api/Ventas"
         Dim client As New Http.HttpClient
-        'Dim JsonData As String = JsonConvert.SerializeObject(c)
-        'Dim RestContent As New Http.StringContent(JsonData, Encoding.UTF8, "application/json")
+
         Dim RestResponse As Http.HttpResponseMessage = Await client.GetAsync(RestURL)
 
         Dim OK = RestResponse.StatusCode.ToString

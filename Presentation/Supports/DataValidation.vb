@@ -4,7 +4,6 @@ Public Class DataValidation
     Private results As List(Of ValidationResult)
     Private valid As Boolean
     Private message As String
-
     Public Sub New(instance As Object)
         context = New ValidationContext(instance)
         results = New List(Of ValidationResult)
